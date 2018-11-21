@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:300,400,700'); 
+
+:root{
+  --background-color: #FF4500;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+html,
+body{
+  font-family: 'Saira Extra Condensed', sans-serif;
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-icon img{
+  width: 50px;
+}
+
+header .title h1{
+  font-weight: normal;
+  font-size: 2rem;  
+}
+
+header{
+  display: flex;
+  align-items: center;
+}
+
+header, 
+main{
+  padding: 2rem;
+}
+
+.title{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+main{
+  background: var(--background-color);
+  flex: 1;
+}
+
+
+form{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-weight: 200;
+  height: 100%;
+}
+
+::placeholder{
+  color: rgba(0,0,0,0.4);
+}
+
+form input[type="text"],
+form input[type="phone"]{
+  color: rgba(0,0,0,0.7);
+  font-size: 1rem;
+}
+
+form input[type="text"],
+form input[type="phone"],
+form input[type="button"]{
+  font-family: 'Saira Extra Condensed', sans-serif;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.button-container{
+  align-items: flex-end; 
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  position: relative;
+}
+
+#btn-salvar{
+  border: none;
+  background: white;
+  background-size: 20px;
+  color: var(--background-color);
+  cursor: pointer;
+  font-size: 1.4rem;
+  margin-bottom: 0;
+  width: 100%;
+  position:relative;
+} 
+
+.btn-salvar{
+  color: var(--background-color);
+  position: absolute;
+  font-size: 1.4rem;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 9999;
+}
+
+form legend{
+  border-bottom: solid 1px;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+select{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  background:    url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-128.png') no-repeat no-repeat 98% center, #fff;
+  background-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor:pointer;  
+  display: inline;
+  width: 100%;
+  padding: 1rem;
+
+}
+@import url('https://fonts.googleapis.com/css?family=Sunflower:300,500,700');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/* Definição de variáveis */
+:root{
+  --cor-texto: #121212;
+  --cor-texto-branco: #FEFEFE;
+  --fundo-header: #0984e3;
+  --altura-menu: 6rem;
+}
+
+/* Tipografia */
+a{
+  text-decoration: none;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p, 
+div,
+span,
+strong,
+em{
+  color: var(--cor-texto);
+  font-family: 'Sunflower', sans-serif;
+}
+
+/* Cabeçalho */
+
+header{
+  background: var(--fundo-header);
+  height: var(--altura-menu);
+  padding: 0 2rem;
+  position: relative;
+  transition: all ease-in-out 0.5s;
+}
+
+nav{
+  background: #333;
+  height: 100%;
+  left: 0;  
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  transition: all ease-in-out .3s;
+}
+
+nav ul{
+  list-style: none;
+  padding: 2rem;
+}
+
+nav li{
+  padding: 1rem 0;
+}
+
+nav a{
+  color: var(--cor-texto-branco);
+  display: block;
+  text-decoration: none;
+}
+
+nav.hidden{
+  overflow: hidden;
+  width: 0;
+}
+
+nav.active{
+  width: 20vw;
+}
+
+header h1{
+  line-height: var(--altura-menu);
+  text-align: center;
+}
+
+#btn{
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Estilo menu-icon*/ 
+#menu-icon{
+  height: 25px;
+  line-height: 6rem;
+  width: 40px;
+}
+
+#menu-icon [id^="linha"]{
+  background: var(--cor-texto);
+  border-radius: 5px;
+  height: 5px;
+  margin-bottom: 5px;
+  width: 100%;  
+}
+
+#menu-icon [id^="linha"]:last-of-type{
+  margin-bottom: 0;
+}
+
+/* Botão para fechar Menu */
+#close{
+  font-size: 2rem;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+
+/* Transições */
+nav,
+#menu-bar,
+header{
+    transition: all ease-in-out 0.4s;
+}            
+
+

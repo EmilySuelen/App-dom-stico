@@ -1,0 +1,20 @@
+nav a{
+  border: solid 1px;
+  border-color: #D3D3D3;
+}
+
+a{
+   color: #808080;
+}
+
+body{
+	background: #eee;
+}
+
+.menu{
+	display: inline-block;
+}
+
+#logo{
+	display: inline-block;
+}
